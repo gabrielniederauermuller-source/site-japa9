@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>A Busca pela Joia do Dragão</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="Desenho de um antigo pergaminho e uma joia cintilante.">
+            <p>Você é um jovem explorador em busca da lendária Joia do Dragão, dita ter poderes imensos. Sua única pista é um antigo pergaminho que indica que a joia está escondida em algum lugar no Oriente. Para onde você decide ir primeiro?</p>
+            <button class="btn-proximo" data-proximo="1">Japão - Montanhas Nevadas</button>
+            <button class="btn-proximo" data-proximo="2">China - Deserto de Gobi</button>
+        </div>
+
+        <div class="passo" id="passo-1">
+            <p>No Japão, você escala o Monte Fuji. No topo, encontra um monge recluso que te oferece um enigma. A joia está "onde a água encontra o céu".</p>
+            <button class="btn-proximo" data-proximo="3">Investigar os lagos nas montanhas</button>
+            <button class="btn-proximo" data-proximo="4">Descer a montanha e ir para o oceano</button>
+        </div>
+
+        <div class="passo" id="passo-2">
+            <p>No vasto Deserto de Gobi, você encontra as ruínas de uma antiga cidade. Uma inscrição diz que a Joia "resiste ao calor e dorme no frio". O que você faz?</p>
+            <button class="btn-proximo" data-proximo="5">Procurar em ruínas subterrâneas frias</button>
+            <button class="btn-proximo" data-proximo="6">Seguir uma miragem que parece ser água</button>
+        </div>
+
+        <div class="passo" id="passo-3">
+            <p>Você encontra um pequeno lago congelado. Você se lembra do enigma e quebra o gelo, encontrando uma **mapa antigo** que aponta para um Templo na China.</p>
+            <button class="btn-proximo" data-proximo="7">Viajar para o Templo na China</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-oceano-vazio.png" alt="Imagem de um vasto oceano vazio.">
+            <p>A busca pelo oceano não revela nada. Você perde tempo e decide que precisa voltar às montanhas.</p>
+            <button class="btn-proximo" data-proximo="1">Voltar ao Monte Fuji</button>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Dentro das ruínas subterrâneas, o ar é frio. Você encontra um baú lacrado com o símbolo de um dragão. Você o abre e encontra um **antigo pergaminho** que aponta para um Templo na China.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para o Templo</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>A miragem se dissipa sob o sol escaldante, e você percebe que perdeu um dia inteiro. Você decide voltar às ruínas.</p>
+            <button class="btn-proximo" data-proximo="2">Voltar às Ruínas de Gobi</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Você chega a um Templo antigo e escondido, guardado por dois estátuas de dragões. Qual porta você escolhe?</p>
+            <button class="btn-proximo" data-proximo="9">Porta da Esquerda (Símbolo de Água)</button>
+            <button class="btn-proximo" data-proximo="10">Porta da Direita (Símbolo de Fogo)</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>A porta de Água leva você a uma câmara secreta, onde a **Joia do Dragão** cintila sobre um pedestal de gelo. Você a alcança e sente um poder antigo fluir.</p>
+            <button class="btn-proximo" data-proximo="11">Final - Joia Encontrada</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>A porta de Fogo leva a um labirinto de armadilhas. Você escapa, mas a exaustão te força a abandonar a busca por enquanto.</p>
+            <button class="btn-proximo" data-proximo="12">Fim de Jogo - Retorno</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11-joia-encontrada.png" alt="Imagem de uma joia mágica e brilhante.">
+            <p>Com a Joia do Dragão em suas mãos, você se torna uma lenda. Você usa o poder para proteger o mundo, garantindo que o seu mistério seja sempre lembrado.</p>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Você decide que a busca pela Joia é muito perigosa. Você retorna para casa, mas o desejo de aventura nunca te abandona. A Joia continua perdida.</p>
+            <button class="btn-proximo" data-proximo="0">Recomeçar a Jornada</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
